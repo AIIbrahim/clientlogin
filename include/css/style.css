@@ -1,0 +1,312 @@
+
+header
+{ 
+	position: fixed;
+    height: 112px;
+    width: 100%;
+    z-index: 2;
+    background-color:rgba(0,0,0,0.3) ;
+	
+}
+.logo{
+    position: relative;
+    float: left;
+}
+.logo h1{
+    color: white;    
+    font-weight: bold;
+    padding-top: 40px;
+    padding-left: 40px;
+}
+button{
+    border: 1px solid white;
+    background-color: rgba(0,0,0,0.5);
+}
+
+nav{
+    padding-top: 50px;
+    padding-right: 30px;
+}
+nav ul{
+    margin-top: 20px;
+    margin-right: 30px;
+    text-align: center;
+    line-height: 30px;
+    width: 100px;
+}
+nav li{
+    border: 1px solid white;
+}
+nav li:hover{
+    background-color: white;
+
+}
+
+.slider-section{
+    width: 100%;
+    height: 900px;
+    background-image: url(../img/slider.jpg);
+    background-size: 100% 100%;
+}
+.slider-overlay{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.65);
+	position: relative;
+}
+.slider-content{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+}
+
+
+.hello{
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 25px;
+}
+.typing{
+    color:hsl(0, 0%, 100%);
+    text-align: center;
+    font-size: 25px;
+}
+
+.work{
+    color:white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.sparky{
+    color: red;
+    font-size: 30px;
+}
+.dev{
+    font-size: 30px;
+    color: blueviolet;
+}
+
+.service-desc{
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.service{
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    border: 1px solid black;
+    height: 50px;
+    width: 300px;
+    margin-left: 340px;
+
+}
+.service-inner{
+    position: relative;
+    box-shadow:0 0 10px rgba(0,0,0,0.5);
+    
+    width: 100%;
+	height: 300px;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 10px;
+}
+
+.service-inner:hover{
+    background-color: rgb(24, 22, 22);
+    color: white;
+    
+}
+
+.fa-navicon, .fa-laptop, .fa-database{
+    font-size: 50px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.5s ease;
+} 
+
+.service-inner:hover .fa-laptop{
+    color: #d35400;
+    transform: scale(2.5)rotateY(180deg);
+}
+
+.service-inner:hover .fa-navicon{
+    color: #d35400;
+    transform: scale(2.5)rotateY(180deg);
+}
+
+.service-inner:hover .fa-database{
+    color: #d35400;
+    transform: scale(2.5)rotateY(180deg);
+}
+
+.service1-h1{
+    position: relative;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    top: 20px;
+}
+.service-inner p1{
+    position: relative;
+    color: black;
+    font-size: 15px;
+    text-align: justify;
+    top: 100px;
+    padding: 15px 15px 15px;
+}
+.icon-service{
+    position: relative;
+    left: 250px;
+    top: 60px;
+    transform: scale(1.5);
+}
+
+.first-service:hover .service1-h1{
+    color: blue;
+}
+.first-service:hover .service1-p1{
+    color: white;
+}
+.project-title{
+    position: absolute;
+    color: black;
+    text-align: center;
+    font-size: 35px;
+    border: 1px solid black;
+    height: 50px;
+    width: 300px;
+    margin-left: 340px;
+	position: relative;
+    margin-top: 65px;
+}
+.project1{
+    width: 100%;
+	height: 300px;
+	border: 1px solid #ddd;
+	position: relative;
+    overflow: hidden;
+    margin-top: 65px;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.project1-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;    
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(24, 22, 22);
+    color: white;
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+.project1 h1{
+    color: #d35400;
+    font-size: 30px;
+}
+
+.project1 p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+.project1:hover .project1-content{
+    transform: scale(1);
+}
+.project1:hover img{
+    transform:scale(1.5,1.5)rotate(10deg);
+}
+
+.proj{
+    position: absolute;
+	content: '';
+	background-color: rgba(0,0,0,0.5);
+	transition:all 0.5s ease-in;
+	top:-40%;
+	right: -110%;
+	width: 170%;
+	height: 70%;
+	transform:rotate(40deg);
+    z-index: 2;
+}
+
+.project1:hover .proj{
+	top:120%;
+	right: 120%;
+}
+
+.fa-bars{
+    color: white;
+    transform: scale(1.5);
+}
+
+.address{
+    position: relative;
+    top: 70px;
+}
+.message-form{
+    position: relative;
+    top: 70px;
+}
+input, textarea{
+	height: 40px;
+	line-height: 40px;
+    border:none;
+	border-bottom: 1px solid #333;
+	width: 70%;
+	margin:0 auto;
+	margin-bottom: 40px;
+    padding-left: 20px;
+	margin-left: 100px;
+}
+input:focus,textarea:focus
+{
+	border-color: #d35400;
+	border-width: 2px;
+}
+.submit{
+    height: 30px;
+    width: 150px;
+    line-height: 30px;
+    font-weight: bold;
+    padding: 0;
+    margin-left: 100px;
+    color: rgb(111, 111, 128);
+    background-color: white;
+    border: 1px solid  rgb(111, 111, 128) ;    
+}
+.submit:hover{
+    color: white;
+    background-color: orangered;
+    border: 2px solid  orangered;    
+}
+
+footer{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background-color: #333;
+    text-align: center;
+    color: white;
+    top: 100px;
+}
+
+.right{
+    text-align: right;
+}
+
+.center{
+    text-align: center;
+	font-size: 36px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+

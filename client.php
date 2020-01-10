@@ -28,7 +28,7 @@ if( mysqli_num_rows($result) > 0 ) {
        echo "<tr>";
             
         echo "<td>" . $row['username'] . "</td> <td>" . $row['email'] . "</td>";
-        echo "</tr> ";        
+        echo "</tr>";        
    }           
         echo "</table>"; 
 
