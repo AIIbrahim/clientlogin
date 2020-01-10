@@ -1,7 +1,8 @@
 <?php
 
     include ('connection.php');
-
+    
+include ('include/header.php');
 
     // store the result
    
@@ -44,6 +45,11 @@
         <input type="text" name="email" placeholder="email">
 		<input type="submit" name="submit">
 	</form>
+
+    <?php 
+    
+    include ('include/footer.php');
+    ?>
 
 </body>
 </html>

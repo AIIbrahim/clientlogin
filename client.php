@@ -1,7 +1,7 @@
 <?php
 
 include ('connection.php');
-
+include ('include/header.php');
 $query = "SELECT * FROM users";
 
 // store the result
@@ -11,7 +11,7 @@ $result = mysqli_query( $conn, $query );
 if( mysqli_num_rows($result) > 0 ) {
    
    // store basic user data in variables
-   echo "<table>
+   echo "<table class='table table-striped table-bordered' >
    <tr>
    <th>Name</th>
    <th>Password</th>
@@ -35,5 +35,6 @@ if( mysqli_num_rows($result) > 0 ) {
 }else{
     echo " no information in database";
 }
+    include ('include/footer.php');
 
 ?>
