@@ -24,17 +24,14 @@ if( mysqli_num_rows($result) > 0 ) {
        $email      = $row['email'];
        $hashedPass = $row['password'];
 
-     
+     //<td>" . $row['password'] . "</td><td>"
        echo "<tr>";
             
-        echo "<td>" . $row['username'] . "</td><td>" . $row['password'] . "</td><td>" . $row['email'] . "</td>";
-            
-           
-        echo "</tr>   </table>"; 
-           
-   }
+        echo "<td>" . $row['username'] . "</td> <td>" . $row['email'] . "</td>";
+        echo "</tr> ";        
+   }           
+        echo "</table>"; 
 
- 
 }else{
     echo " no information in database";
 }
