@@ -1,6 +1,7 @@
 <?php
-
+    session_start();
     include ('connection.php');
+    include ('include/header.php');
 
      $query = "SELECT username, email, password FROM users";
     
@@ -27,6 +28,9 @@
         if ( password_verify( $enteredpass, $hashedPass) ) {
                    echo "you're logged in" .$enteredname;
                    echo " <br> your password is " .$enteredpass . " with email ".$email;
+                    
+            // redirect user to clients page
+                header( "Location: client.php" );
             
         }else {
         	echo "<br> incorrect details";
@@ -45,10 +49,14 @@
 <body>
 
 	<form  action="" method="post">
-        <input type="text" class="form-control"  name="username" placeholder="username">
-   	    <input type="password" name="pass" placeholder="password">
+        <small> NAME</small><input type="text" class="form-control"  name="username" placeholder="username">
+        <small> PASSWORD</small><input type="password" class="form-control" name="pass" placeholder="password">
 	    <input type="submit" name="submit">
 	</form>
-    <p> NEW USER? REGISTER <a href="add.php"> HERE</a></p>
+    <p> NEW USER? REGISTER <a href="register.php"> HERE</a></p>
+
+    <?php 
+    include ('include/footer.php');
+    ?>
 </body>
 </html>
